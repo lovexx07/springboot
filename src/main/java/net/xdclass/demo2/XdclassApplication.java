@@ -54,16 +54,16 @@ public class XdclassApplication {
 		return new ActiveMQTopic("video.topic");
 	}
 
-//	/**
-//	 *需要给topic定义独立的jmsListenerContainer
-//	 * @param connectionFactory
-//	 * @return
-//	 */
-//	@Bean
-//	public JmsListenerContainerFactory<?> jmsListenerContainerTopic(ConnectionFactory connectionFactory){
-//		DefaultJmsListenerContainerFactory bean = new DefaultJmsListenerContainerFactory();
-//		bean.setPubSubDomain(true);
-//		bean.setConnectionFactory(connectionFactory);
-//		return bean
-//	}
+	/**
+	 *需要给topic定义独立的jmsListenerContainer
+	 * @param connectionFactory
+	 * @return
+	 */
+	@Bean
+	public JmsListenerContainerFactory<?> jmsListenerContainerTopic(ConnectionFactory connectionFactory){
+		DefaultJmsListenerContainerFactory bean = new DefaultJmsListenerContainerFactory();
+		bean.setPubSubDomain(true);
+		bean.setConnectionFactory(connectionFactory);
+		return bean;
+	}
 }
