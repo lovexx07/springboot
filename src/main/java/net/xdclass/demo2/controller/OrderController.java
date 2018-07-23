@@ -26,4 +26,10 @@ public class OrderController {
         producerService.sendMessage(destination, msg);
         return JsonData.buildSuccess();
     }
+
+    @GetMapping("common")
+    public Object common(String msg){
+        producerService.sendMessage(msg);
+        return JsonData.buildSuccess();
+    }
 }
