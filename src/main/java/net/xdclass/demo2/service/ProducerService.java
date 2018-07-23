@@ -17,4 +17,11 @@ public interface ProducerService {
      * @param message
      */
     void sendMessage(final String message);
+
+
+    /**
+     * 消息队列发布者
+     * @param msg
+     */
+    void publish(String msg);
 }

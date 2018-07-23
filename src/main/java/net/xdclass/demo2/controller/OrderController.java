@@ -32,4 +32,12 @@ public class OrderController {
         producerService.sendMessage(msg);
         return JsonData.buildSuccess();
     }
+
+
+    //================发布消息生成================
+    @GetMapping("topic")
+    public Object topic(String msg){
+        producerService.publish(msg);
+        return JsonData.buildSuccess();
+    }
 }
