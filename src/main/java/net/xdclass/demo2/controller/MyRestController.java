@@ -1,6 +1,5 @@
 package net.xdclass.demo2.controller;
 
-import net.xdclass.demo2.domain.User;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
