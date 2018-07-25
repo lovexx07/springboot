@@ -4,6 +4,7 @@ import org.apache.activemq.command.ActiveMQQueue;
 import org.apache.activemq.command.ActiveMQTopic;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.MultipartConfigFactory;
 import org.springframework.boot.web.servlet.ServletComponentScan;
@@ -29,6 +30,7 @@ import javax.servlet.MultipartConfigElement;
 public class XdclassApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(XdclassApplication.class, args);
 	}
 	@Bean
